@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="title"><h1>Registration Page</h1></div>
+            <div class="content">
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First name </span>
+                            <input type="text" id="firstNameInput" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Middle name</span>
+                            <input type="text" id="middleNameInput" placeholder="Enter your middlename" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Last /Sur Name</span>
+                            <input type="text" id="lastNameInput" placeholder="Enter your lastname" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Father name</span>
+                            <input type="text" id="fatherNameInput" placeholder="Enter your Fathername" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Mother name</span>
+                            <input type="text" id="motherNameInput" placeholder="Enter your mothername" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Certificate Name</span>
+                        </div> 
+                        <p style="font-size: 10px; color:black;">
+                            Select from the option to print on the Certificate.
+                        </p>
+                        <div>
+                            <!-- checkboxes with onchange event -->
+                            <label for="firstNameInput">First Name</label>
+                            <input type="checkbox" id="firstNameInput" name="firstNameInput" value="firstNameInput" onchange="updateContent()">
+                            <label for="middlename">Middle name</label>
+                            <input type="checkbox" id="middlename" name="middlename" value="middlename" onchange="updateContent()">
+                            <label for="Fathername">Father's Name</label>
+                            <input type="checkbox" id="Fathername" name="Father" value="Fathername" onchange="updateContent()">
+                            <label for="Initial">Initial</label>
+                            <input type="checkbox" id="Initial" name="Initial" value="Initial" onchange="updateContent()">
+                            <label for="surname">Surname</label>
+                            <input type="checkbox" id="surname" name="surname" value="Surname" onchange="updateContent()">
+                        </div>
+                        <div class="input-box">
+                            <input type="text" id="certificateName" placeholder="" required readonly>
+                        </div> 
+                        <label for="gender">Select your gender:</label>
+                        <select id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="input-box">
+                            <span class="details">Instructor Name</span>
+                            <input type="text" placeholder="Enter your Instructor Name" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Instructor Phone Number</span>
+                            <input type="number" placeholder="Enter your Instructor Phone Number" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Create Password</span>
+                            <input type="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">Confirm Password</span>
+                            <input type="password" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      function updateContent() {
+          var firstNameInput = document.getElementById('firstNameInput');
+          var middleNameInput = document.getElementById('middleNameInput');
+          var lastNameInput = document.getElementById('lastNameInput');
+          var fatherNameInput = document.getElementById('fatherNameInput');
+          var motherNameInput = document.getElementById('motherNameInput');
+          var certificateNameInput = document.getElementById('certificateName');
+  
+          var selectedOptions = [];
+          
+          // Always include First Name by default
+          selectedOptions.push(firstNameInput.value);
+  
+          if (document.getElementById('middlename').checked) {
+              selectedOptions.push(middleNameInput.value);
+          }
+          if (document.getElementById('Fathername').checked) {
+              selectedOptions.push(fatherNameInput.value);
+          }
+          if (document.getElementById('Initial').checked) {
+              selectedOptions.push(fatherNameInput.value.charAt(0).toUpperCase());
+          }
+          if (document.getElementById('surname').checked) {
+              selectedOptions.push(lastNameInput.value);
+          }
+  
+          certificateNameInput.value = selectedOptions.join(" ");
+      }
+  </script>
+  
+</body>
+</html>
