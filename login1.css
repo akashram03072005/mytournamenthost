@@ -1,32 +1,32 @@
-.logo-icon1 {
+.logo-icon2 {
   position: relative;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   object-fit: cover;
 }
-.home1 {
+.home3 {
   position: relative;
   font-weight: 500;
   color: var(--color-gray-100);
 }
-.illustrations1 {
+.illustrations2 {
   position: relative;
   display: none;
 }
-.links1 {
+.links3 {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
   gap: var(--gap-21xl);
 }
-.frame3,
-.icons28 {
+.frame7,
+.icons32 {
   overflow: hidden;
   flex-shrink: 0;
 }
-.frame3 {
+.frame7 {
   width: 449px;
   height: 40px;
   display: flex;
@@ -35,13 +35,13 @@
   justify-content: flex-start;
   gap: var(--gap-21xl);
 }
-.icons28 {
+.icons32 {
   position: relative;
   width: 24px;
   height: 24px;
   object-fit: cover;
 }
-.dropdown1 {
+.dropdown3 {
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
@@ -51,11 +51,11 @@
   gap: var(--gap-11xs);
   text-align: left;
 }
-.sign-up5 {
+.sign-up7 {
   position: relative;
   cursor: pointer;
 }
-.icons-parent2 {
+.icons-parent5 {
   position: absolute;
   top: calc(50% - 12.5px);
   left: calc(50% - 129px);
@@ -65,13 +65,13 @@
   justify-content: center;
   gap: var(--gap-5xs);
 }
-.button5,
-.icons30 {
+.button7,
+.icons34 {
   position: relative;
   overflow: hidden;
   flex-shrink: 0;
 }
-.button5 {
+.button7 {
   border-radius: var(--br-5xs);
   border: 1px solid var(--color-gray-100);
   box-sizing: border-box;
@@ -79,13 +79,13 @@
   height: 40px;
   color: var(--color-gray-100);
 }
-.icons30 {
+.icons34 {
   width: 24px;
   height: 24px;
   object-fit: cover;
   display: none;
 }
-.icons-parent3 {
+.icons-parent6 {
   position: absolute;
   top: calc(50% - 12.5px);
   left: calc(50% - 30px);
@@ -95,7 +95,7 @@
   justify-content: center;
   gap: var(--gap-5xs);
 }
-.button6 {
+.button8 {
   position: relative;
   border-radius: var(--br-5xs);
   background-color: var(--color-gray-100);
@@ -108,33 +108,33 @@
   display: none;
   color: var(--color-white);
 }
-.frame2,
-.login-sign-up1 {
+.frame6,
+.login-sign-up2 {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.login-sign-up1 {
+.login-sign-up2 {
   justify-content: center;
   gap: var(--gap-13xl);
   text-align: center;
   color: var(--color-darkslategray);
 }
-.frame2 {
+.frame6 {
   width: 1360px;
   height: 40px;
   overflow: hidden;
   flex-shrink: 0;
   justify-content: flex-start;
-  gap: 382px;
+  gap: var(--gap-363xl);
 }
-.divider5 {
+.divider8 {
   position: relative;
   background-color: var(--color-dimgray-200);
   width: 1440px;
   height: 1px;
 }
-.header-nav1 {
+.header-nav2 {
   position: absolute;
   top: 0;
   left: calc(50% - 720px);
@@ -146,9 +146,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  gap: 15px;
+  gap: var(--gap-mini);
 }
-.image-1-icon {
+.image-1-icon1 {
   position: absolute;
   top: 0;
   left: -295px;
@@ -333,7 +333,7 @@
   width: 298px;
   height: 483.9px;
 }
-.frame4,
+.frame8,
 .sign-in-create-an-account1 {
   width: 974px;
   overflow: hidden;
@@ -347,14 +347,14 @@
   flex-shrink: 0;
   justify-content: center;
 }
-.frame4 {
+.frame8 {
   position: absolute;
   top: 0;
   left: 233px;
   height: 834px;
   justify-content: flex-end;
 }
-.frame1,
+.frame5,
 .sign-up-or-log-in1 {
   position: absolute;
   width: 1440px;
@@ -369,60 +369,59 @@
   color: var(--color-white);
   font-family: var(--font-roboto);
 }
-.frame1 {
+.frame5 {
   top: 0;
   left: 0;
   height: 1024px;
 }
-.divider6 {
-  position: relative;
+.divider9 {
   background-color: var(--color-dimgray-200);
   width: 1218px;
   height: 1px;
 }
-.product {
+.divider9,
+.education {
+  position: relative;
+}
+.about-us-group,
+.product-group {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.about-us-group {
+  text-align: center;
+}
+.community {
+  position: relative;
   font-size: var(--font-size-base);
   color: var(--color-darkslategray);
 }
-.product,
-.solutions {
-  position: relative;
-}
-.product-parent {
-  flex-direction: column;
-  gap: var(--gap-5xs);
-}
-.about-us-parent,
-.frame-parent1,
-.product-parent {
+.frame-parent4 {
   flex-shrink: 0;
   display: flex;
+  flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: var(--gap-45xl);
 }
-.about-us-parent {
-  flex-direction: column;
-  gap: var(--gap-5xs);
-  text-align: center;
-}
-.frame-parent1 {
-  flex-direction: row;
-  gap: 64px;
-}
-.app-store-icon {
+.app-store-icon1 {
   position: relative;
   width: 180px;
   height: 52px;
   object-fit: cover;
   display: none;
 }
-.google-play-icon {
+.google-play-icon1 {
   position: relative;
   width: 144px;
   height: 41.6px;
   object-fit: cover;
 }
-.app-store-parent {
+.app-store-group {
   flex-shrink: 0;
   display: none;
   flex-direction: row;
@@ -430,26 +429,26 @@
   justify-content: flex-start;
   gap: var(--gap-base);
 }
-.mth-1-icon1 {
+.mth-1-icon2 {
   position: relative;
   border-radius: var(--br-102xl-5);
   width: 187px;
   height: 187px;
   object-fit: cover;
 }
-.frame-container {
+.frame-parent3 {
   flex-shrink: 0;
-  gap: 155px;
+  gap: var(--gap-136xl);
 }
 .copyright-2022-parent,
-.frame-container,
-.links2 {
+.frame-parent3,
+.links4 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.links2 {
+.links4 {
   flex-shrink: 0;
   gap: var(--gap-5xl);
 }
@@ -457,21 +456,21 @@
   position: absolute;
   top: 1px;
   left: 0;
-  gap: 56px;
+  gap: var(--gap-37xl);
 }
-.social-media-logo,
-.social-media-logo1 {
+.social-media-logo3,
+.social-media-logo4 {
   position: relative;
   width: 24px;
   height: 24px;
   object-fit: cover;
   opacity: 0.8;
 }
-.social-media-logo1 {
+.social-media-logo4 {
   width: 20px;
   height: 20px;
 }
-.bg {
+.bg3 {
   background: radial-gradient(
     50% 50%at 50% 50%,
     #b13589,
@@ -479,9 +478,9 @@
     #8a3ac8
   );
 }
-.bg,
-.bg1,
-.bg2 {
+.bg3,
+.bg4,
+.bg5 {
   position: absolute;
   height: 87.5%;
   width: 87.5%;
@@ -491,7 +490,7 @@
   left: 6.5%;
   border-radius: var(--br-7xs);
 }
-.bg1 {
+.bg4 {
   background: radial-gradient(
     50% 50%at 50% 50%,
     #e0e8b7,
@@ -500,10 +499,10 @@
     rgba(226, 66, 92, 0)
   );
 }
-.bg2 {
+.bg5 {
   background-color: var(--color-dimgray-100);
 }
-.instagram-icon {
+.instagram-icon1 {
   position: absolute;
   height: 62.5%;
   width: 62.5%;
@@ -516,32 +515,32 @@
   max-height: 100%;
   object-fit: cover;
 }
-.social-media-logo2 {
+.social-media-logo5 {
   position: relative;
   width: 20px;
   height: 20px;
   opacity: 0.8;
 }
-.social-media-logo-parent {
+.social-media-logo-group {
   flex-shrink: 0;
   align-items: flex-end;
   justify-content: center;
   gap: var(--gap-base);
 }
-.dropdown2,
-.frame-parent2,
-.social-media-logo-parent {
+.dropdown4,
+.frame-parent5,
+.social-media-logo-group {
   display: flex;
   flex-direction: row;
 }
-.dropdown2 {
+.dropdown4 {
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
   padding: 0 0 0 var(--padding-5xs);
   gap: var(--gap-11xs);
 }
-.frame-parent2 {
+.frame-parent5 {
   position: absolute;
   top: 0;
   left: 781px;
@@ -556,7 +555,7 @@
   height: 24px;
   color: var(--color-darkslategray);
 }
-.divider-parent {
+.divider-group {
   position: absolute;
   top: 48px;
   left: 111px;
@@ -566,7 +565,7 @@
   justify-content: center;
   gap: var(--gap-21xl);
 }
-.footer {
+.footer1 {
   position: absolute;
   bottom: 0;
   left: calc(50% - 720px);
@@ -575,7 +574,7 @@
   height: 440px;
   overflow: hidden;
 }
-.my-tournament-host {
+.my-tournament-host1 {
   position: absolute;
   top: calc(50% - 228.5px);
   left: calc(50% - 286px);
@@ -584,12 +583,12 @@
   color: var(--color-black);
   text-align: center;
 }
-.frame5,
-.login-page {
+.frame9,
+.login-page1 {
   width: 1440px;
   overflow: hidden;
 }
-.frame5 {
+.frame9 {
   position: absolute;
   top: 1024px;
   left: 0;
@@ -597,7 +596,7 @@
   font-size: var(--font-size-sm);
   color: var(--color-dimgray-100);
 }
-.login-page {
+.login-page1 {
   position: relative;
   background-color: var(--color-white);
   height: 1487px;
